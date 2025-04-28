@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Мои поздравление!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+      font-family: 'Arial', sans-serif;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .text-box {
+      font-size: 20px;
+      max-width: 800px;
+      margin-bottom: 40px;
+      line-height: 1.6;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8); /* Белый фон для текста */
+      border: 5px solid #ff6f91; /* Рамка */
+      border-radius: 10px; /* Скругленные углы */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень */
+    }
+
+    p {
+      font-size: 20px;
+      max-width: 800px;
+      margin-bottom: 40px;
+      line-height: 1.6;
+    }
+
+    .button {
+      padding: 15px 30px;
+      font-size: 20px;
+      background-color: #ff6f91;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .button:hover {
+      background-color: #ff4e70;
+      transform: scale(1.05);
+    }
+
+    .star {
+      position: absolute;
+      top: -10px;
+      width: 10px;
+      height: 10px;
+      background-color: #ff0000;
+      border-radius: 50%;
+      animation: floatStars 5s infinite;
+      opacity: 0.8;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0) translateX(0);
+      }
+      100% {
+        transform: translateY(110vh) translateX(30px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Воспоминания -->
+  <h1>Мои поздравление тебе</h1>
+  <p>
+    С днём рождения, моя самая дорогая!<br><br>
+
+  Тебе сегодня 17, и это невероятный возраст —<br>
+  когда мечты становятся ближе, а мир открывает новые горизонты.<br><br>
+
+  Ты — удивительная: добрая, красивая, умная и настоящая.<br>
+  Я горжусь тобой, восхищаюсь каждым твоим поступком<br>
+  и каждым моментом рядом с тобой.<br><br>
+
+  Ты делаешь мою жизнь ярче, теплее и счастливее.<br>
+  Я хочу, чтобы ты всегда улыбалась,<br>
+  чтобы рядом были только те, кто искренне любит и ценит тебя.<br><br>
+
+  И знай: я рядом. Я люблю тебя всем сердцем.<br><br>
+
+  С днём рождения, моя особенная девочка! 💖
+  </p>
+
+  <!-- Кнопка дальше -->
+  <button class="button" onclick="location.href='Page3.html'">Дальше</button>
+
+  <!-- Музыка -->
+  <audio autoplay loop>
+    <source src="пианино.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="heart" style="left: 10%; animation-delay: 0s;"></div>
+  <div class="heart" style="left: 30%; animation-delay: 2s;"></div>
+  <div class="heart" style="left: 50%; animation-delay: 4s;"></div>
+  <div class="heart" style="left: 70%; animation-delay: 6s;"></div>
+  <div class="heart" style="left: 90%; animation-delay: 8s;"></div>
+
+
+</body>
+</html>
